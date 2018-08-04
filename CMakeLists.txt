@@ -5,6 +5,14 @@ set(CMAKE_C_STANDARD 99)
 set(PROJECT_BINARY_DIR C:/Users/CZZ/CLionProjects/CFS)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
+configure_file(
+    "${PROJECT_BINARY_DIR}/config.h.in"
+    "${PROJECT_BINARY_DIR}/config.h"
+)
+
+option(DEBUG_MODE "Switch to debug mode" ON)
+option(DEBUG_CMD "Show debug info of cmd parsing module" ON)
+
 include_directories(.)
 add_subdirectory(cmd_handler)
 add_subdirectory(lib)

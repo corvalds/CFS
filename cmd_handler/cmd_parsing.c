@@ -9,6 +9,7 @@
 #include "cmd_parsing.h"
 #include "./handler/handler.h"
 #include "errors.h"
+#include "config.h"
 
 void init_cmd_parsing() {
     handlers[CMD_LS_CODE] = ls_handler;
@@ -48,6 +49,20 @@ int cmd_parsing(char *cmd_with_args) {
         args[args_count][i++] = *cursor;
         cursor++;
     }
+
+#ifdef DEBUG_MODE
+#ifdef DEBUG_CMD
+    // 在debug模式下打印获取的命令及解析的参数
+    printf("--------cmd parsing result--------\n");
+    printf("raw input: %s\n", cmd_with_args);
+    printf("command: %s\n", cmd);
+    printf("arguments: ");
+    for (int j = 0; j <= args_count; j++) {
+        printf("%s ", args[j]);
+    }
+    printf("\n--------cmd parsing result--------\n");
+#endif
+#endif
 
     // 匹配命令代号
     for (int k = 0; k < SUPPORTED_CMD_NUM; k++) {

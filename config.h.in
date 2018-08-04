@@ -1,0 +1,2 @@
+#cmakedefine DEBUG_MODE
+#cmakedefine DEBUG_CMD
