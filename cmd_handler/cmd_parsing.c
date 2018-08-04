@@ -45,6 +45,8 @@ int cmd_parsing(char *cmd_with_args) {
             }
             args[args_count] = malloc(sizeof(char) * MAX_CMD_ARG_LEN);
             memset(args[args_count], 0, sizeof(char) * MAX_CMD_ARG_LEN);
+            // 跳过空格
+            cursor++;
         }
         args[args_count][i++] = *cursor;
         cursor++;
