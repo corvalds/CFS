@@ -6,6 +6,9 @@
 
 #ifndef CFS_ERRORS_H
 
+// 使用memset函数
+#include <mem.h>
+
 // 错误信息缓冲区大小
 #define ERROR_BUF_LEN 50
 // 错误信息缓冲区大小

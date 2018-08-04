@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "exit_handler.h"
-#include "errors.h"
+#include "CFS.h"
 
 int exit_handler(char *args[], int args_num) {
     printf("dealing with exit command");
@@ -21,5 +21,5 @@ int exit_handler(char *args[], int args_num) {
         }
     }
 
-    return DONE_CODE;
+    return EXIT_CODE;
 }
