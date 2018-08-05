@@ -34,8 +34,17 @@ int cmd_parsing(char *cmd_with_args) {
 
     // 获取命令后面的参数（args_count是从0开始的，但handler中的args_num是从1开始的）
     int args_count = -1;
+    int if_pre_is_space = 0; // 前一个字符是否为空格
     while (*cursor != '\0') {
+        // 存在空格直接跳过
         if (*cursor == ' ') {
+            cursor++;
+            if_pre_is_space = 1;
+            continue;
+        }
+
+        // 如果到了空格和有意义字符的交界处，则将上一个空格和下一个空格的间隔视为一个参数
+        if (if_pre_is_space) {
             i = 0;
             args_count++;
             // 传入超过三个参数时，只取前三个参数
@@ -45,8 +54,7 @@ int cmd_parsing(char *cmd_with_args) {
             }
             args[args_count] = malloc(sizeof(char) * MAX_CMD_ARG_LEN);
             memset(args[args_count], 0, sizeof(char) * MAX_CMD_ARG_LEN);
-            // 跳过空格
-            cursor++;
+            if_pre_is_space = 0;
         }
         args[args_count][i++] = *cursor;
         cursor++;
