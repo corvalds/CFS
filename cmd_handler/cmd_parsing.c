@@ -14,9 +14,11 @@
 void init_cmd_parsing() {
     handlers[CMD_LS_CODE] = ls_handler;
     handlers[CMD_EXIT_CODE] = exit_handler;
+    handlers[CMD_CREATE_CODE] = create_handler;
 
     strcpy(supported_cmd[CMD_LS_CODE], "ls\0");
     strcpy(supported_cmd[CMD_EXIT_CODE], "exit\0");
+    strcpy(supported_cmd[CMD_CREATE_CODE], "create\0");
 }
 
 int cmd_parsing(char *cmd_with_args) {

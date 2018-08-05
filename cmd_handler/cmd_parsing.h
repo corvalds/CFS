@@ -12,10 +12,11 @@ int cmd_parsing(char *cmd_with_args);
 // 命令代码
 #define CMD_LS_CODE 0
 #define CMD_EXIT_CODE 1
+#define CMD_CREATE_CODE 2
 // 命令代码
 
 // 支持的命令数量
-#define SUPPORTED_CMD_NUM 2
+#define SUPPORTED_CMD_NUM 3
 // 支持的命令数量
 
 // 最长命令字符数

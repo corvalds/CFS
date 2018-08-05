@@ -7,6 +7,7 @@
 #ifndef CFS_HANDLER_H
 #include "./ls_handler/ls_handler.h"
 #include "./exit_handler/exit_handler.h"
+#include "./create_handler/create_handler.h"
 #define CFS_HANDLER_H
 
 #endif //CFS_HANDLER_H

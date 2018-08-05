@@ -12,11 +12,13 @@ configure_file(
 
 option(DEBUG_MODE "Switch to debug mode" ON)
 option(DEBUG_CMD "Show debug info of cmd parsing module" ON)
+option(DEBUG_VFS "Show debug info of virtual file system" ON)
 
 include_directories(.)
+include_directories(core)
 add_subdirectory(cmd_handler)
 add_subdirectory(lib)
+add_subdirectory(core/virtual_fs)
 
 add_executable(CFS main.c)
-target_link_libraries(CFS Cmd_Handler)
-target_link_libraries(CFS TopLib)
+target_link_libraries(CFS Cmd_Handler TopLib)

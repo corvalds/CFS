@@ -5,6 +5,7 @@
 //
 
 #ifndef CFS_ERRORS_H
+#define CFS_ERRORS_H
 
 // 使用memset函数
 #include <mem.h>
@@ -26,6 +27,8 @@ char error_msg[ERROR_BUF_LEN];
 #define ERRORS_CODE -1
 // 整形函数返回码
 
-#define CFS_ERRORS_H
+// 通用的错误信息
+#define TOO_LESS_ARGS "Expect more arguments"
+// 通用的错误信息
 
 #endif //CFS_ERRORS_H

@@ -1,2 +1,3 @@
 #cmakedefine DEBUG_MODE
 #cmakedefine DEBUG_CMD
+#cmakedefine DEBUG_VFS
