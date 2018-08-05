@@ -58,7 +58,7 @@ int cmd_parsing(char *cmd_with_args) {
     printf("--------cmd parsing result--------\n");
     printf("raw input: %s\n", cmd_with_args);
     printf("command: %s\n", cmd);
-    printf("arguments: ");
+    printf("arguments[%d]: ", args_count + 1);
     for (int j = 0; j <= args_count; j++) {
         printf("%s ", args[j]);
     }
