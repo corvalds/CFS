@@ -13,19 +13,19 @@ int get_file_ext(char *src, char *ext, int ext_len) {
     int count = 0;
 
     // 先将back_ptr指针后退至最近一个分隔符'.'的位置
-    while (back_ptr != src && *back_ptr != '.') {
+    while (back_ptr != src && *back_ptr != '.' && *back_ptr != '/') {
         count++;
         back_ptr--;
-    }
-
-    // 如果count>ext_len那说明拓展名过长
-    if (count > ext_len) {
-        return OUTSIZE_EXT_NAME;
     }
 
     // 如果back_ptr不是遇到分隔符停下，则说明该文件没有拓展名
     if (*back_ptr != '.') {
         return NONE_EXTENSION;
+    }
+    
+    // 如果count>ext_len那说明拓展名过长
+    if (count > ext_len) {
+        return OUTSIZE_EXT_NAME;
     }
 
     // 从分隔符开始遍历到最后一个字符
