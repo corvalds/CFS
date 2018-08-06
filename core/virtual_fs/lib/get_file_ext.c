@@ -22,7 +22,7 @@ int get_file_ext(char *src, char *ext, int ext_len) {
     if (*back_ptr != '.') {
         return NONE_EXTENSION;
     }
-    
+
     // 如果count>ext_len那说明拓展名过长
     if (count > ext_len) {
         return OUTSIZE_EXT_NAME;

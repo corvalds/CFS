@@ -7,5 +7,5 @@
 #include "check_path.h"
 
 int check_path(char *path) {
-    return PATH_EXIST;
+    return PATH_NOT_EXIST;
 }
