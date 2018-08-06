@@ -24,7 +24,7 @@ char error_msg[ERROR_BUF_LEN];
 
 // 整形函数返回码
 #define DONE_CODE 0
-#define ERRORS_CODE -1
+#define ERRORS_CODE -10
 // 整形函数返回码
 
 // 通用的错误信息
