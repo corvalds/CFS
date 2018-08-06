@@ -5,6 +5,7 @@
 //
 
 #include "get_file_ext.h"
+#include "string.h"
 
 // ext应该是一个长度为ext_len的字符数组
 int get_file_ext(char *src, char *ext, int ext_len) {
@@ -18,7 +19,7 @@ int get_file_ext(char *src, char *ext, int ext_len) {
     }
 
     // 如果count>ext_len那说明拓展名过长
-    if (count > ext) {
+    if (count > ext_len) {
         return OUTSIZE_EXT_NAME;
     }
 
