@@ -8,5 +8,6 @@
 #define CFS_INCLUDES_H
 
 #include "check_path.h"
+#include "get_file_ext.h"
 
 #endif //CFS_INCLUDES_H

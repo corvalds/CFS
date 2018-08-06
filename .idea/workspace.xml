@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="CFS" targetName="CFS" />
-      <config projectName="CFS" targetName="TopLib" />
-      <config projectName="CFS" targetName="VirtualFS" />
       <config projectName="CFS" targetName="Handler" />
-      <config projectName="CFS" targetName="Cmd_Handler" />
       <config projectName="CFS" targetName="VirtualFSLib" />
+      <config projectName="CFS" targetName="VirtualFS" />
+      <config projectName="CFS" targetName="TopLib" />
+      <config projectName="CFS" targetName="Cmd_Handler" />
+      <config projectName="CFS" targetName="CFS" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -16,25 +16,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18a294db-920d-438d-b983-ad961098d2a6" name="Default" comment="完成了文件抽象层的大体架构，调整了CMake部分依赖关系">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/core.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/file.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/check_path.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/check_path.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/includes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/vfs.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/vfs.h" />
+    <list default="true" id="18a294db-920d-438d-b983-ad961098d2a6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.h" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/cmd_handler/cmd_parsing.c" afterPath="$PROJECT_DIR$/cmd_handler/cmd_parsing.c" />
-      <change beforePath="$PROJECT_DIR$/cmd_handler/cmd_parsing.h" afterPath="$PROJECT_DIR$/cmd_handler/cmd_parsing.h" />
-      <change beforePath="$PROJECT_DIR$/cmd_handler/handler/CMakeLists.txt" afterPath="$PROJECT_DIR$/cmd_handler/handler/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/cmd_handler/handler/handler.h" afterPath="$PROJECT_DIR$/cmd_handler/handler/handler.h" />
-      <change beforePath="$PROJECT_DIR$/config.h.in" afterPath="$PROJECT_DIR$/config.h.in" />
+      <change beforePath="$PROJECT_DIR$/core/virtual_fs/file.h" afterPath="$PROJECT_DIR$/core/virtual_fs/file.h" />
+      <change beforePath="$PROJECT_DIR$/core/virtual_fs/lib/includes.h" afterPath="$PROJECT_DIR$/core/virtual_fs/lib/includes.h" />
+      <change beforePath="$PROJECT_DIR$/core/virtual_fs/vfs.c" afterPath="$PROJECT_DIR$/core/virtual_fs/vfs.c" />
+      <change beforePath="$PROJECT_DIR$/core/virtual_fs/vfs.h" afterPath="$PROJECT_DIR$/core/virtual_fs/vfs.h" />
       <change beforePath="$PROJECT_DIR$/errors.h" afterPath="$PROJECT_DIR$/errors.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -48,11 +37,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="get_file_ext.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-344">
+              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_file_ext.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="vfs.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/virtual_fs/vfs.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+            <state relative-caret-position="402">
+              <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
               <folding>
                 <element signature="e#93#111#0" expanded="true" />
               </folding>
@@ -60,41 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_path.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/check_path.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="vfs.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/virtual_fs/vfs.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="437">
+              <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_path.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/check_path.h">
+      <file leaf-file-name="file.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/virtual_fs/file.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_handler.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="207">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -133,8 +122,6 @@
         <option value="$PROJECT_DIR$/cmd_handler/handler/exit_handler/exit_handler.c" />
         <option value="$PROJECT_DIR$/config.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/core/virtual_fs/file.h" />
-        <option value="$PROJECT_DIR$/core/virtual_fs/lib/includes.h" />
         <option value="$PROJECT_DIR$/core/virtual_fs/lib/check_path.h" />
         <option value="$PROJECT_DIR$/core/virtual_fs/lib/check_path.c" />
         <option value="$PROJECT_DIR$/core/core.h" />
@@ -142,15 +129,19 @@
         <option value="$PROJECT_DIR$/cmd_handler/cmd_parsing.c" />
         <option value="$PROJECT_DIR$/cmd_handler/handler/handler.h" />
         <option value="$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.h" />
-        <option value="$PROJECT_DIR$/errors.h" />
         <option value="$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.c" />
-        <option value="$PROJECT_DIR$/core/virtual_fs/vfs.h" />
         <option value="$PROJECT_DIR$/cmd_handler/handler/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/core/virtual_fs/lib/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/core/virtual_fs/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/config.h.in" />
+        <option value="$PROJECT_DIR$/core/virtual_fs/lib/includes.h" />
+        <option value="$PROJECT_DIR$/errors.h" />
+        <option value="$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.c" />
+        <option value="$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.h" />
+        <option value="$PROJECT_DIR$/core/virtual_fs/vfs.h" />
         <option value="$PROJECT_DIR$/core/virtual_fs/vfs.c" />
+        <option value="$PROJECT_DIR$/core/virtual_fs/file.h" />
       </list>
     </option>
   </component>
@@ -192,13 +183,20 @@
             <path>
               <item name="CFS" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="CFS" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd_handler" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CFS" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="CFS" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd_handler" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="virtual_fs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CFS" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="CFS" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="virtual_fs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,7 +268,8 @@
       <workItem from="1533281485514" duration="17514000" />
       <workItem from="1533387868609" duration="5215000" />
       <workItem from="1533393644928" duration="1200000" />
-      <workItem from="1533429535512" duration="14533000" />
+      <workItem from="1533429535512" duration="14909000" />
+      <workItem from="1533561695538" duration="3125000" />
     </task>
     <task id="LOCAL-00001" summary="完成输入命令-调用函数的主循环">
       <created>1533391997887</created>
@@ -307,13 +306,20 @@
       <option name="project" value="LOCAL" />
       <updated>1533431155819</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成了文件抽象层的大体架构，调整了CMake部分依赖关系">
+      <created>1533447073161</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533447073161</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38462000" />
+    <option name="totallyTimeSpent" value="41963000" />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -328,7 +334,6 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22286822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -339,6 +344,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -394,6 +400,22 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/check_path.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -442,7 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -450,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -458,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -507,7 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,15 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/includes.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,15 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errors.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,14 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/virtual_fs/file.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -653,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,15 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,15 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/virtual_fs/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,18 +688,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/check_path.c">
+    <entry file="file://$PROJECT_DIR$/core/core.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/virtual_fs/vfs.h">
+    <entry file="file://$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="368">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -745,28 +711,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/includes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/check_path.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/virtual_fs/vfs.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        <state relative-caret-position="402">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
           <folding>
             <element signature="e#93#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/core.h">
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="345">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd_handler/handler/create_handler/create_handler.c">
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/vfs.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="437">
+          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/file.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/virtual_fs/lib/get_file_ext.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
         </state>
       </provider>
